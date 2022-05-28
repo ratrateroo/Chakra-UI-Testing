@@ -3,7 +3,6 @@ import {
   ChakraProvider,
   Box,
   Text,
-  Link,
   VStack,
   Code,
   Grid,
@@ -12,7 +11,7 @@ import {
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 
 
-function App() {
+const App = () => {
   return (
     <ChakraProvider theme={theme}>
       <Box textAlign="center" fontSize="xl">
