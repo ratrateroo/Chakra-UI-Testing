@@ -12,9 +12,11 @@ const LogIn = () => {
      
       <Box textAlign="center" fontSize="xl">
      <FormControl>
-  <FormLabel htmlFor='email'>Email address</FormLabel>
-  <Input id='email' type='email' />
-  <FormHelperText>We'll never share your email.</FormHelperText>
+  <FormLabel htmlFor='username'>Username</FormLabel>
+  <Input id='username' type='text' />
+  <FormLabel htmlFor='password'>Password</FormLabel>
+  <Input id='password' type='password' />
+  <FormHelperText>We'll never share your information.</FormHelperText>
 </FormControl>
       </Box>
     
