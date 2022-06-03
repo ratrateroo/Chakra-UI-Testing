@@ -1,9 +1,10 @@
 import React from 'react';
 import {
     FormControl,FormLabel,Input,FormHelperText,
-  Box,
+  Box,Button, ButtonGroup
    
 } from '@chakra-ui/react';
+
  
 
 
@@ -18,6 +19,7 @@ const LogIn = () => {
   <Input id='password' type='password' />
   <FormHelperText>We'll never share your information.</FormHelperText>
 </FormControl>
+<Button colorScheme='blue'>Button</Button>
       </Box>
     
   );
