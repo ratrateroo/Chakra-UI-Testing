@@ -9,11 +9,16 @@ import {
   theme,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
+import { Routes } from 'react-router-dom';
 import Navigation from './components/Navigation';
+import Home from './pages/home';
 
 const App = () => {
   return (
     <ChakraProvider theme={theme}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
       <Box textAlign="center" fontSize="xl">
         <Navigation />
         <Grid minH="100vh" p={3}>
