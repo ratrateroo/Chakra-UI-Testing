@@ -9,7 +9,7 @@ import {
   theme,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Routes } from 'react-router-dom';
+import { Routes, Link } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Home from './pages/home';
 
@@ -19,6 +19,14 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
+      <nav style={{ margin: 10 }}>
+        <Link to="/" style={{ padding: 5 }}>
+          Home
+        </Link>
+        <Link to="/about" style={{ padding: 5 }}>
+          About
+        </Link>
+      </nav>
       <Box textAlign="center" fontSize="xl">
         <Navigation />
         <Grid minH="100vh" p={3}>
