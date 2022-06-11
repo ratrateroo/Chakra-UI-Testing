@@ -9,7 +9,7 @@ import {
   theme,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Routes, Link } from 'react-router-dom';
+import { Routes, Link, Outlet } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Home from './pages/home';
 
@@ -38,6 +38,7 @@ const App = () => {
           </VStack>
         </Grid>
       </Box>
+      <Outlet />
     </ChakraProvider>
   );
 };
