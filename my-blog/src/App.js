@@ -20,12 +20,6 @@ const App = () => {
         <Route path="/" element={<Home />} />
       </Routes>
       <nav style={{ margin: 10 }}>
-        <Link to="/" style={{ padding: 5 }}>
-          Home
-        </Link>
-        <Link to="/about" style={{ padding: 5 }}>
-          About
-        </Link>
         <Link to="/login" style={{ padding: 5 }}>
           Log In
         </Link>
