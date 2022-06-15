@@ -19,7 +19,6 @@ const Navigation = () => {
           <Link>Sign Up</Link>
         </HStack>
       </Flex>
-      <Grid minH="100vh" p={3}></Grid>
     </Box>
   );
 };
