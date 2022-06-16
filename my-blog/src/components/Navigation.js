@@ -1,14 +1,5 @@
 import React from 'react';
-import {
-  Flex,
-  Box,
-  Text,
-  VStack,
-  HStack,
-  Grid,
-  Button,
-  Link,
-} from '@chakra-ui/react';
+import { Flex, Box, HStack, Link } from '@chakra-ui/react';
 
 const Navigation = () => {
   return (
