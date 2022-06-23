@@ -6,6 +6,7 @@ import Navigation from './components/Navigation';
 import Home from './pages/Home';
 import LogIn from './pages/LogIn';
 import SignUp from './pages/SignUp';
+import Nav from './components/Nav';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
 
       <Box textAlign="center" fontSize="xl">
         <Navigation />
+        <Nav />
         <Grid minH="100vh" p={3}>
           <ColorModeSwitcher justifySelf="flex-end" />
         </Grid>
