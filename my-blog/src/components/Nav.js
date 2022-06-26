@@ -3,6 +3,7 @@ import {
   Box,
   Flex,
   Avatar,
+  HStack,
   Link,
   Button,
   Menu,
@@ -17,6 +18,8 @@ import {
   Center,
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+
+const Links = ['Home', 'Log In', 'Sign Up'];
 
 const NavLink = ({ children }) => (
   <Link
@@ -40,10 +43,23 @@ export default function Nav() {
     <>
       <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-          <Box>Logo</Box>
+          {/* <Box>Logo</Box>
           <NavLink>Home</NavLink>
           <NavLink>Log In</NavLink>
-          <NavLink>Sign Up</NavLink>
+          <NavLink>Sign Up</NavLink> */}
+
+          <HStack spacing={8} alignItems={'center'}>
+            <Box>Logo</Box>
+            <HStack
+              as={'nav'}
+              spacing={4}
+              display={{ base: 'none', md: 'flex' }}
+            >
+              {Links.map(link => (
+                <NavLink key={link}>{link}</NavLink>
+              ))}
+            </HStack>
+          </HStack>
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>
               <Button onClick={toggleColorMode}>
